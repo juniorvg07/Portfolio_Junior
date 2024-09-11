@@ -1,0 +1,182 @@
+/*===== Variables CSS =====*/
+:root {
+    --font-light: 300;
+    --font-normal: 400;
+    --font-bold: 500;
+    --font-super-bold: 700;
+    /*===== Colores =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --magenta: #8B008B;
+    --gray: #4d4a4d;
+}
+/*===== Generales =====*/
+*{
+    color: var(--gray);
+    font-family: "Signika", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--font-normal);
+    font-variation-settings:
+      "GRAD" 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    display: grid;
+}
+.section{
+    display: block;
+    padding: 1rem 5rem;
+}
+.section-title h2{
+    font-weight: var(--font-bold);
+    font-size: 2rem;
+    color: var(--magenta);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.section-container{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+/*===== Header =====*/
+header{
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 1px 4px;
+    position: fixed;
+    background-color: #ffff;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    text-align: center;
+}
+h1{
+    color: var(--magenta);
+    font-weight: var(--font-super-bold);
+}
+ul{
+    list-style: none;
+}
+.element :hover{
+    color: var(--magenta);
+    font-weight: var(--font-bold);
+}
+a{
+    font-weight: var(--font-bold);
+    text-decoration: none;
+}
+
+/*===== Main =====*/
+main{
+    display: block;
+}
+
+/*===== Home =====*/
+.home-section{
+    padding: 6rem 4rem 1.5rem;
+    display: grid;
+}
+.icons{
+    height: 3rem;
+    margin-right: 1rem;
+}
+.home-name{
+    padding: 2rem 1rem;
+    grid-row: 1;
+    align-content: center;
+}
+.front{
+    grid-row: 2;
+}
+.back{
+    margin-top: 0.75rem;
+    grid-row: 3;
+}
+.section-profile{
+    grid-column: 2;
+}
+
+/*===== About =====*/
+#about-pic{
+    height: auto;
+    padding: 0 2rem;
+}
+.about-description{
+    padding: 2rem;
+    align-content: center;
+}
+
+/*===== Skills =====*/
+.techs{
+    display: grid;
+    margin-top: .75rem;
+}
+.skill-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill_technology{
+    display: flex;
+}
+.skill_name_title{
+    margin-left: 1rem;
+}
+.skill_data{
+    margin-top: 1rem;
+}
+#skill_icon, #skill_arrow{
+    font-size: 2rem;
+}
+#skill_arrow{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.skill_title{
+    display: flex;
+}
+.skill_name{
+    margin-left: 1rem;
+}
+.skill_number{
+    margin-left: auto;
+    margin-right: 0;
+}
+.skill_bar, .skill_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skill_percentage{
+    display: block;
+    background-color: var(--magenta);
+}
+.skill_bar{
+    background-color: #af77af;
+}
+.skill_html{
+    width: 90%;
+}
+.skill_css{
+    width: 90%;
+}
+.skill_js{
+    width: 80%;
+}
+.skill_react{
+    width: 80%;
+}
+.skill_java{
+    width: 90%;
+}
+.skill_spring{
+    width: 80%;
+}

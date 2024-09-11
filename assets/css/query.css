@@ -1,0 +1,205 @@
+@media screen and (max-width: 480px) {
+    /*===== Header =====*/
+    .header-container{
+        height: 4rem;
+        padding: 1rem 2rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+
+    /*===== Navbar =====*/
+    #menu{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav-container{
+        position: fixed;
+        top: 5rem;
+        right: -100%;
+        width: 150px;
+        height: 100%;
+        text-align: center;
+        background-color: var(--magenta);
+        transition: 0.6s;
+    }
+    .open{
+        right: 0;
+        transition: 0.5s;
+    }
+    .nav-list{
+        display: grid;
+    }
+    .element{
+        margin-top: 2rem;
+    }
+    .element :hover{
+        color: black;
+        font-weight: var(--font-bold);
+    }
+    a{
+        font-weight: var(--font-bold);
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /*===== Home =====*/
+    .section-container{
+        grid-column: 1 / span 1;
+    }
+    .home-name{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .section-profile{
+        grid-column: 2 /span 1;
+        grid-row: 1;
+    }
+    .front{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    .back{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+    .icons{
+        height: 2rem;
+    }
+    #profile{
+        width: auto;
+        height: 200px;
+    }
+    
+    /*===== About =====*/
+    #about-pic{
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    /*===== Header =====*/
+    .header-container{
+        height: 3rem;
+        padding: 1rem 2rem;
+    }
+    h1{
+        font-size: 1.25rem;
+    }
+
+    /*===== Navbar =====*/
+    #menu{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav-container{
+        position: fixed;
+        top: 5rem;
+        right: -100%;
+        width: 150px;
+        height: 100%;
+        text-align: center;
+        background-color: var(--magenta);
+        transition: 0.6s;
+    }
+    .open{
+        right: 0;
+        transition: 0.5s;
+    }
+    .nav-list{
+        display: grid;
+    }
+    .element{
+        margin-top: 2rem;
+    }
+    .element :hover{
+        color: black;
+        font-weight: var(--font-bold);
+    }
+    a{
+        font-weight: var(--font-bold);
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /*===== Home =====*/
+    .icons{
+        height: 2rem;
+    }
+    .section-profile{
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        align-content: center;
+    }
+    #profile{
+        width: auto;
+        height: 220px;
+    }
+
+    /*===== About =====*/
+    #about-pic{
+        width: 200px;
+    }
+    .about-description{
+        grid-column: 2;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /*===== Header =====*/
+    .header-container{
+        height: 3rem;
+        padding: 1rem 2rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+
+    /*===== Navbar =====*/
+    #menu{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+    }
+    ul{
+        list-style: none;
+    }
+    .element{
+        margin-left: 40px;
+    }
+    .element :hover{
+        color: var(--magenta);
+        font-weight: var(--font-bold);
+    }
+    a{
+        font-weight: var(--font-bold);
+        text-decoration: none;
+    } 
+
+    /*===== Home =====*/
+    .home-section{
+        padding: 6rem 5rem 1.5rem;
+        display: grid;
+    }
+    .home-name h2{
+        font-size: 2rem;
+    }
+    .section-profile{
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        align-content: center;
+    }
+    #profile{
+        width: auto;
+        height: 350px;
+    }
+
+    /*===== About =====*/
+    #about-pic{
+        width: 280px;
+    }
+    .about-description{
+        grid-column: 2;
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Lo que esta en el head va al navegador y no lo ve el usuario-->
+        <title>Portfolio Junior Vasquez</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="StyleSheet" href="assets/css/style.css">
+        <link rel="StyleSheet" href="assets/css/query.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="title">
+                    <h1>JUNIOR VASQUEZ</h1>
+                    <h1>DEVELOPER</h1>
+                </div>
+
+                <div class="figure-icon">
+                    <i class="material-icons" id="menu">menu</i>
+                </div>
+
+                <div class="nav-container" id="navbar">
+                    <nav class="navbar">
+                        <ul class="nav-list">
+                            <li class="home element" id="home"><a href="#">Home</a></li>
+                            <li class="about element" id="about"><a href="#">About</a></li>
+                            <li class="skills element" id="skills"><a href="#">Skills</a></li>
+                            <li class="contact element" id="contact"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="home-section">
+                <div class="home section-container">
+                    <div class="home-name">
+                        <h2>I'm Junior Vasquez</h2>
+                        <h2>Software Developer</h2>
+                    </div>
+                    <div class="home section-profile">
+                        <img id="profile" src="assets/img/pictures/profile.png"></image>
+                    </div>
+                    <div class="front tecnologies">
+                        <img class="icons" src="assets/img/techs/html5.png"></image>
+                        <img class="icons" src="assets/img/techs/css3.png"></image>
+                        <img class="icons" src="assets/img/techs/js.png"></image>
+                        <img class="icons" src="assets/img/techs/react.png"></image>
+                    </div>
+                    <div class="back tecnologies">
+                        <img class="icons" src="assets/img/techs/java.png"></image>
+                        <img class="icons" src="assets/img/techs/springboot.png"></image>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section">
+                <div class="about section-title">
+                    <h2>About me</h2>
+                </div>
+
+                <div class="about section-container">
+                    <div class="about-picture">
+                        <img id="about-pic" src="assets/img/pictures/profile_pic1.png">
+                    </div>
+
+                    <div class="about-description">
+                        <span>Hola mundo hola mundo hola mundo hola mundo hola mundo hola mundo hola mundo hola mundo hola mundo hola mundo hola mundo </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills section">
+                <div class="skills section-title">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skills section-container">
+                    <!-- Skill 1: Fronted -->
+                    <div class="skill techs">
+                        <div class="skill-header">
+                            <div class="skill_technology">
+                                <i class="material-icons" id="skill_icon">data_object</i>
+                                <h2 class="skill_name_title">Fronted</h2>
+                            </div>
+                            <i class="material-icons" id="skill_arrow">keyboard_arrow_down</i>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill_data" id="html">
+                                <div class="skill_title">
+                                    <i class="material-icons">html</i>
+                                    <h3 class="skill_name">HTML</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill bar">
+                                    <span class="skill_percentage skill_html"></span>
+                                </div>
+                            </div>
+                            <div class="skill_data" id="css">
+                                <div class="skill_title">
+                                    <i class="material-icons">css</i>
+                                    <h3 class="skill_name">CSS</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill bar">
+                                    <span class="skill_percentage skill_css"></span>
+                                </div>
+                            </div>
+                            <div class="skill_data" id="js">
+                                <div class="skill_title">
+                                    <i class="material-icons">javascript</i>
+                                    <h3 class="skill_name">JAVASCRIPT</h3>
+                                    <span class="skill_number">80%</span>
+                                </div>
+                                <div class="skill bar">
+                                    <span class="skill_percentage skill_js"></span>
+                                </div>
+                            </div>
+                            <div class="skill_data" id="react">
+                                <div class="skill_title">
+                                    <i class="material-icons">code</i>
+                                    <h3 class="skill_name">REACT</h3>
+                                    <span class="skill_number">80%</span>
+                                </div>
+                                <div class="skill bar">
+                                    <span class="skill_percentage skill_react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2: Backend -->
+                    <div class="skill techs">
+                        <div class="skill-header">
+                            <div class="skill_technology">
+                                <i class="material-icons" id="skill_icon">storage</i>
+                                <h2 class="skill_name_title">Backed</h2>
+                            </div>
+                            <i class="material-icons" id="skill_arrow">keyboard_arrow_down</i>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill_data" id="java">
+                                <div class="skill_title">
+                                    <i class="material-icons">local_cafe</i>
+                                    <h3 class="skill_name">JAVA</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill bar">
+                                    <span class="skill_percentage skill_java"></span>
+                                </div>
+                            </div>
+                            <div class="skill_data" id="spring">
+                                <div class="skill_title">
+                                    <i class="material-icons">power_settings_new</i>
+                                    <h3 class="skill_name">SPRING BOOT</h3>
+                                    <span class="skill_number">80%</span>
+                                </div>
+                                <div class="skill bar">
+                                    <span class="skill_percentage skill_spring"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work section">
+                <div class="work section-title">
+                    <h2>Work</h2>
+                </div>
+
+                <div class="work section-container">
+                    
+                </div>
+            </section>
+
+            <section class="contact section">
+                <div class="contact section-title">
+                    <h2>Contact me</h2>
+                </div>
+
+                <div class="contact section-container">
+                    
+                </div>
+            </section>
+        </main>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
