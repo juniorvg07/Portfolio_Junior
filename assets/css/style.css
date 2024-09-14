@@ -27,8 +27,10 @@ body{
     display: grid;
 }
 .section{
-    display: block;
-    padding: 1rem 5rem;
+    padding: 6rem 5rem 1rem;
+}
+.section-title{
+    margin-bottom: 2rem;
 }
 .section-title h2{
     font-weight: var(--font-bold);
@@ -81,7 +83,7 @@ main{
 }
 
 /*===== Home =====*/
-.home-section{
+#home{
     padding: 6rem 4rem 1.5rem;
     display: grid;
 }
@@ -118,7 +120,9 @@ main{
 /*===== Skills =====*/
 .techs{
     display: grid;
-    margin-top: .75rem;
+}
+#backend{
+    margin-top: 2rem;
 }
 .skill-header{
     display: flex;
@@ -179,4 +183,57 @@ main{
 }
 .skill_spring{
     width: 80%;
+}
+.skills_open #skill_arrow{
+    transform: rotate(-180deg);
+}
+.skills_open .skill-list{
+    height: max-content;
+}
+.skills_close .skill-list{
+    height: 0;
+    overflow: hidden;
+}
+
+/*===== Work =====*/
+.work_article{
+    background-color: var(--magenta);
+    border-radius: 20px;
+    height: auto;
+}
+.article_card{
+    display: grid;
+    margin: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 16px;
+}
+.article_card h3{
+    color: var(--magenta);
+    padding-bottom: 0.5rem;
+}
+.article_card span{
+    padding-top: 0.75rem;
+}
+/*===== Contact =====*/
+.contact_form{
+    display: grid;
+    align-content: center;
+}
+.contact_input{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/*===== Footer =====*/
+footer{
+    width: 100%;
+    height: 6rem;
+    background-color: var(--magenta);
+    align-content: center;
+}
+footer h1{
+    text-align: center;
+    color: #fff;
 }

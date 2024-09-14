@@ -28,10 +28,11 @@
                 <div class="nav-container" id="navbar">
                     <nav class="navbar">
                         <ul class="nav-list">
-                            <li class="home element" id="home"><a href="#">Home</a></li>
-                            <li class="about element" id="about"><a href="#">About</a></li>
-                            <li class="skills element" id="skills"><a href="#">Skills</a></li>
-                            <li class="contact element" id="contact"><a href="#">Contact</a></li>
+                            <li class="home element"><a href="#home">Home</a></li>
+                            <li class="about element"><a href="#about">About</a></li>
+                            <li class="skills element"><a href="#skills">Skills</a></li>
+                            <li class="work element"><a href="#works">Work</a></li>
+                            <li class="contact element"><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -39,7 +40,7 @@
         </header>
 
         <main>
-            <section class="home-section">
+            <section class="home section" id="home">
                 <div class="home section-container">
                     <div class="home-name">
                         <h2>I'm Junior Vasquez</h2>
@@ -61,12 +62,12 @@
                 </div>
             </section>
 
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="about section-title">
                     <h2>About me</h2>
                 </div>
 
-                <div class="about section-container">
+                <div class="about_section section-container">
                     <div class="about-picture">
                         <img id="about-pic" src="assets/img/pictures/profile_pic1.png">
                     </div>
@@ -77,14 +78,14 @@
                 </div>
             </section>
 
-            <section class="skills section">
+            <section class="skills section" id="skills">
                 <div class="skills section-title">
                     <h2>Skills</h2>
                 </div>
 
-                <div class="skills section-container">
+                <div class="skills_section section-container">
                     <!-- Skill 1: Fronted -->
-                    <div class="skill techs">
+                    <div class="skill techs skills_open">
                         <div class="skill-header">
                             <div class="skill_technology">
                                 <i class="material-icons" id="skill_icon">data_object</i>
@@ -138,7 +139,7 @@
                     </div>
 
                     <!-- Skill 2: Backend -->
-                    <div class="skill techs">
+                    <div class="skill techs skills_close" id="backend">
                         <div class="skill-header">
                             <div class="skill_technology">
                                 <i class="material-icons" id="skill_icon">storage</i>
@@ -173,26 +174,67 @@
                 </div>
             </section>
 
-            <section class="work section">
+            <section class="work section" id="works">
                 <div class="work section-title">
                     <h2>Work</h2>
                 </div>
 
-                <div class="work section-container">
-                    
+                <div class="work_section section-container">
+                    <!-- Work 1: Aplicativo Escrutinio -->
+                    <article class="work_article">
+                        <div class="article_card">
+                            <h3>Aplicativo de Escrutinio<br>Elecciones Jueces de Paz 2022</h3>
+                            <div class="image_container">
+                                <img class="work_image" src="assets/img/techs/java.png"></image>
+                            </div>
+                            <span>Hello world Hello world Hello world Hello world Hello world Hello world</span>
+                        </div>
+                    </article>
+
+                    <!-- Work 2: Inventario -->
+                    <article class="work_article">
+                        <div class="article_card">
+                            <h3>Aplicativo de Inventario<br>Almacén Registraduría Barranquilla</h3>
+                            <div class="image_container">
+                                <img class="work_image" src="assets/img/techs/java.png"></image>
+                            </div>
+                            <span>Hello world Hello world Hello world Hello world Hello world Hello world</span>
+                        </div>
+                    </article>
+
+                    <!-- Work 3: Facturación -->
+                    <article class="work_article">
+                        <div class="article_card">
+                            <h3>Aplicativo de facturación de tienda</h3>
+                            <div class="image_container">
+                                <img class="work_image" src="assets/img/techs/html5.png"></image>
+                            </div>
+                            <span>Hello world Hello world Hello world Hello world Hello world Hello world</span>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="contact section-title">
                     <h2>Contact me</h2>
                 </div>
 
-                <div class="contact section-container">
-                    
+                <div class="contact_section section-container">
+                    <div class="contact_form">
+                        <input type="text" placeholder="Name" class="contact_input">
+                        <input type="email" placeholder="E-mail" class="contact_input">
+                        <input type="text" class="contact_input">
+                    </div>
                 </div>
             </section>
         </main>
+
+        <footer>
+            <div>
+                <h1>© 2024 Junior Vasquez | All Rights Reserved | Developed by Junior Vasquez</h1>
+            </div>
+        </footer>
 
         <script src="assets/js/main.js"></script>
     </body>

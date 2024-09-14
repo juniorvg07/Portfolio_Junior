@@ -58,6 +58,7 @@
     .front{
         grid-column: 1 / span 2;
         grid-row: 2;
+        margin-top: 1.75rem;
     }
     .back{
         grid-column: 1 / span 2;
@@ -74,6 +75,15 @@
     /*===== About =====*/
     #about-pic{
         width: 180px;
+    }
+
+    /*===== Work =====*/
+    .work_article{
+        margin-bottom: 2rem;
+    }
+    .work_image{
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -143,6 +153,15 @@
     .about-description{
         grid-column: 2;
     }
+
+    /*===== Work =====*/
+    .work_article{
+        margin-bottom: 2rem;
+    }
+    .work_image{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -201,5 +220,18 @@
     }
     .about-description{
         grid-column: 2;
+    }
+
+    /*===== Work =====*/
+    .work_section{
+        display: flex;
+    }
+    .work_article{
+        margin: 0 2rem 2rem 0;
+        height: 100%;
+    }
+    .work_image{
+        width: 200px;
+        height: 200px;
     }
 }
