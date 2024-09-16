@@ -1,7 +1,4 @@
 @media screen and (max-width: 480px) {
-    html{
-        width: 100vh;
-    }
     /*===== Header =====*/
     .header-container{
         height: 4rem;
