@@ -25,6 +25,7 @@
 body{
     box-sizing: border-box;
     display: grid;
+    zoom: 100%;
 }
 .section{
     padding: 6rem 5rem 1rem;
@@ -61,7 +62,7 @@ header{
 .title{
     text-align: center;
 }
-h1{
+#head-title{
     color: var(--magenta);
     font-weight: var(--font-super-bold);
 }
@@ -79,7 +80,7 @@ a{
 
 /*===== Main =====*/
 main{
-    display: block;
+    width: 100%;
 }
 
 /*===== Home =====*/
