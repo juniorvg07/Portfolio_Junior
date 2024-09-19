@@ -41,6 +41,7 @@ body{
     padding-bottom: 1rem;
 }
 .section-container{
+    width: 100%;
     display: grid;
     align-content: center;
     text-align: center;

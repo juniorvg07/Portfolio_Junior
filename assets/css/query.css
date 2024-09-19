@@ -1,7 +1,7 @@
 @media screen and (max-width: 480px) {
     /*===== Header =====*/
     .header-container{
-        height: 4rem;
+        height: 5rem;
         padding: 1rem 2rem;
     }
     h1{
@@ -93,7 +93,7 @@
 @media screen and (min-width: 480px) and (max-width: 768px){
     /*===== Header =====*/
     .header-container{
-        height: 3rem;
+        height: 5rem;
         padding: 1rem 2rem;
     }
     h1{
@@ -170,7 +170,7 @@
 @media screen and (min-width: 768px){
     /*===== Header =====*/
     .header-container{
-        height: 3rem;
+        height: 5rem;
         padding: 1rem 2rem;
     }
     h1{
