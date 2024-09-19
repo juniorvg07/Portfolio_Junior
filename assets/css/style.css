@@ -230,6 +230,14 @@ main{
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
+.contact_button{
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--magenta);
+    color: #fff;
+    border-radius: 8px;
+    border-width: 0;
+}
 
 /*===== Footer =====*/
 footer{

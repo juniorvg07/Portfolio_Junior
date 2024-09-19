@@ -1,4 +1,7 @@
 @media screen and (max-width: 480px) {
+    .section{
+        padding: 6rem 3rem 1rem;
+    }
     /*===== Header =====*/
     .header-container{
         height: 5rem;
@@ -87,6 +90,11 @@
     .work_image{
         width: 150px;
         height: 150px;
+    }
+
+    /*===== Work =====*/
+    .contact_form{
+        width: 100%;
     }
 }
 
