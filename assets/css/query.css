@@ -1,6 +1,10 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .section{
-        padding: 6rem 3rem 1rem;
+        padding: 3rem 3rem 1rem;
     }
     /*===== Header =====*/
     .header-container{
@@ -47,12 +51,16 @@
     }
 
     /*===== Home =====*/
+    #home{
+        padding: 7rem 3rem 1.5rem;
+    }
     .section-container{
         grid-column: 1 / span 1;
     }
     .home-name{
         grid-column: 1;
         grid-row: 1;
+        padding: 0;
     }
     .home-name h2{
         font-size: 1rem;
@@ -64,7 +72,7 @@
     .front{
         grid-column: 1 / span 2;
         grid-row: 2;
-        margin-top: 1.75rem;
+        margin-top: 1rem;
     }
     .back{
         grid-column: 1 / span 2;
@@ -76,7 +84,6 @@
     #profile{
         width: 180px;
     }
-
     
     /*===== About =====*/
     #about-pic{
@@ -95,6 +102,11 @@
     /*===== Work =====*/
     .contact_form{
         width: 100%;
+    }
+
+    /*===== Contact =====*/
+    #contact{
+        padding: 3rem 3rem 3rem;
     }
 }
 
@@ -160,6 +172,7 @@
     /*===== About =====*/
     #about-pic{
         width: 200px;
+        padding: 0 2rem;
     }
     .about-description{
         grid-column: 2;
