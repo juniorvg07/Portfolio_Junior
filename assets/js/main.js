@@ -29,3 +29,30 @@ function toggleSkills(){
 skillHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
+
+/*==================== INTERSECTION OBSERVER ====================*/
+const profile = document.getElementById('profile');
+const title = document.getElementById('home-title');
+const front = document.getElementById('front');
+const back = document.getElementById('back');
+
+const animarImagen = (entradas, observador) => {
+    
+    entradas.forEach((entrada) => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('visible');
+            console.log("visible");
+        }
+    });
+};
+
+const observador = new IntersectionObserver(animarImagen, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+});
+
+observador.observe(profile);
+observador.observe(title);
+observador.observe(front);
+observador.observe(back);

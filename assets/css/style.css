@@ -98,18 +98,51 @@ main{
     grid-row: 1;
     align-content: center;
 }
+.home-name h2{
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 0.7s ease-in-out all;
+}
+.home-name h2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 .front{
     grid-row: 2;
+
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 1.0s ease-in-out all;
+}
+.front.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 .back{
     margin-top: 0.75rem;
     grid-row: 3;
+
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 1.0s ease-in-out all;
+}
+.back.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 .section-profile{
     grid-column: 2;
 }
 #profile{
     height: auto;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s ease-in-out all;
+}
+.section-container .section-profile #profile.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*===== About =====*/
