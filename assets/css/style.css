@@ -146,12 +146,38 @@ main{
 }
 
 /*===== About =====*/
+#aboutTitle{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s ease-in-out all;
+}
+#aboutTitle.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 #about-pic{
     height: auto;
+
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 0.7s ease-in-out all;
+}
+#about-pic.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 .about-description{
     padding: 2rem;
     align-content: center;
+}
+#aboutDesc{
+    opacity: 0;
+    transform: translateX(30px);
+    transition: 0.7s ease-in-out all;
+}
+#aboutDesc.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*===== Skills =====*/

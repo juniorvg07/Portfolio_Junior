@@ -35,13 +35,15 @@ const profile = document.getElementById('profile');
 const title = document.getElementById('home-title');
 const front = document.getElementById('front');
 const back = document.getElementById('back');
+const aboutTitle = document.getElementById('aboutTitle');
+const aboutPic = document.getElementById('about-pic');
+const aboutDesc = document.getElementById('aboutDesc');
 
 const animarImagen = (entradas, observador) => {
     
     entradas.forEach((entrada) => {
         if(entrada.isIntersecting){
             entrada.target.classList.add('visible');
-            console.log("visible");
         }
     });
 };
@@ -56,3 +58,6 @@ observador.observe(profile);
 observador.observe(title);
 observador.observe(front);
 observador.observe(back);
+observador.observe(aboutTitle);
+observador.observe(aboutPic);
+observador.observe(aboutDesc);
